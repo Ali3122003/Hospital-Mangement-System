@@ -59,7 +59,7 @@ CREATE TABLE PatientTreatments (
     FOREIGN KEY (TreatmentId) REFERENCES Treatments(TreatmentId)
 );
 
--- إدراج بيانات أولية
+
 INSERT INTO Departments (DepartmentName) VALUES 
 ('Cardiology'), ('Neurology'), ('Pediatrics'), ('Orthopedics'), ('Oncology');
 
