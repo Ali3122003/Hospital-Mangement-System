@@ -4,8 +4,8 @@ services:
     image: mcr.microsoft.com/mssql/server:2022-latest
     container_name: hospital-db
     environment:
-      SA_PASSWORD: "YourStrong@Passw0rd"
-      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "${SA_PASSWORD}"
+      ACCEPT_EULA: "${ACCEPT_EULA}"
     ports:
       - "1433:1433"
     volumes:
@@ -26,7 +26,7 @@ services:
     volumes:
       - ./init.sql:/init.sql
     command: >
-      /bin/bash -c "sleep 30 && /opt/mssql-tools/bin/sqlcmd -S hospital-db -U sa -P YourStrong@Passw0rd -i /init.sql"
+      /bin/bash -c "sleep 30 && /opt/mssql-tools/bin/sqlcmd -S hospital-db -U sa -P ${SA_PASSWORD} -i /init.sql"
 
   web:
     build:
@@ -38,8 +38,8 @@ services:
     ports:
       - "5000:8080"
     environment:
-      - ConnectionStrings__DefaultConnection=Server=hospital-db;Database=HospitalManagementSystem;User Id=sa;Password=YourStrong@Passw0rd;Encrypt=False;TrustServerCertificate=True;
-      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Server=hospital-db;Database=${DB_NAME};User Id=sa;Password=${SA_PASSWORD};Encrypt=False;TrustServerCertificate=True;
+      - ASPNETCORE_ENVIRONMENT=${ASPNETCORE_ENVIRONMENT}
 
 volumes:
   hospitaldata:
