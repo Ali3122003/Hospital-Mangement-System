@@ -96,18 +96,6 @@ You should see the Hospital Management System homepage.
 
 ---
 
-
-## 🏁 Conclusion
-
-The **Hospital Management System** provides a robust, modular, and scalable foundation for managing hospital operations.  
-Built with **.NET 8**, **Entity Framework Core**, and **Docker**, it ensures consistency between local and production environments.  
-
-
-You can extend the system by adding authentication, cloud deployment (AWS, Azure), or CI/CD pipelines in the future.
-
----
-
-
 ## 🚀 Overview
 
 The **Hospital Management System** is a web-based application built with **.NET 8** and **SQL Server 2022**, designed to streamline hospital operations and improve efficiency.  
