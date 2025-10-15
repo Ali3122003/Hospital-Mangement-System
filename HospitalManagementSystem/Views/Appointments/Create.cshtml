@@ -1,0 +1,38 @@
+﻿@model AppointmentViewModel
+
+@{
+    ViewData["Title"] = "Create Appointment";
+}
+
+<h2>Create Appointment</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="DoctorId" class="control-label"></label>
+        <select asp-for="DoctorId" asp-items="ViewBag.Doctors" class="form-control"></select>
+        <span asp-validation-for="DoctorId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="PatientId" class="control-label"></label>
+        <select asp-for="PatientId" asp-items="ViewBag.Patients" class="form-control"></select>
+        <span asp-validation-for="PatientId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="AppointmentTime" class="control-label"></label>
+        <input asp-for="AppointmentTime" type="datetime-local" class="form-control" />
+        <span asp-validation-for="AppointmentTime" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mt-3">
+        <button type="submit" class="btn btn-success">Save</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+    </div>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

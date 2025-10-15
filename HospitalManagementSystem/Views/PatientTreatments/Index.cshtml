@@ -1,0 +1,35 @@
+﻿@model IEnumerable<HospitalManagementSystem.ViewModels.PatientTreatmentViewModel>
+@{
+    ViewData["Title"] = "Patient Treatments";
+}
+
+<h2>Patient Treatments</h2>
+<a class="btn btn-primary mb-3" asp-action="Create">Add Treatment</a>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Patient</th>
+            <th>Treatment</th>
+            <th>Obtain Date</th>
+            <th>End Date</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var treatment in Model)
+        {
+            <tr>
+                <td>@treatment.PatientName</td>
+                <td>@treatment.TreatmentName</td>
+                <td>@treatment.ObtainDate</td>
+                <td>@(treatment.EndDate?.ToString() ?? "-")</td>
+                <td>
+                    <a class="btn btn-info btn-sm" asp-action="Details" asp-route-id="@treatment.PatientId">Details</a>
+                    @* <a class="btn btn-warning btn-sm" asp-action="Edit" asp-route-id="@treatment.PatientId">Edit</a> *@
+                    <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@treatment.PatientId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

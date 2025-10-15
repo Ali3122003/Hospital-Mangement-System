@@ -1,0 +1,11 @@
+D:\Engineering-Books\Third year\Second Semester\Database\Project\HospitalManagementSystem.Core\bin\Debug\net8.0\HospitalManagementSystem.Core.deps.json
+D:\Engineering-Books\Third year\Second Semester\Database\Project\HospitalManagementSystem.Core\bin\Debug\net8.0\HospitalManagementSystem.Core.dll
+D:\Engineering-Books\Third year\Second Semester\Database\Project\HospitalManagementSystem.Core\bin\Debug\net8.0\HospitalManagementSystem.Core.pdb
+D:\Engineering-Books\Third year\Second Semester\Database\Project\HospitalManagementSystem.Core\obj\Debug\net8.0\HospitalManagementSystem.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Engineering-Books\Third year\Second Semester\Database\Project\HospitalManagementSystem.Core\obj\Debug\net8.0\HospitalManagementSystem.Core.AssemblyInfoInputs.cache
+D:\Engineering-Books\Third year\Second Semester\Database\Project\HospitalManagementSystem.Core\obj\Debug\net8.0\HospitalManagementSystem.Core.AssemblyInfo.cs
+D:\Engineering-Books\Third year\Second Semester\Database\Project\HospitalManagementSystem.Core\obj\Debug\net8.0\HospitalManagementSystem.Core.csproj.CoreCompileInputs.cache
+D:\Engineering-Books\Third year\Second Semester\Database\Project\HospitalManagementSystem.Core\obj\Debug\net8.0\HospitalManagementSystem.Core.dll
+D:\Engineering-Books\Third year\Second Semester\Database\Project\HospitalManagementSystem.Core\obj\Debug\net8.0\refint\HospitalManagementSystem.Core.dll
+D:\Engineering-Books\Third year\Second Semester\Database\Project\HospitalManagementSystem.Core\obj\Debug\net8.0\HospitalManagementSystem.Core.pdb
+D:\Engineering-Books\Third year\Second Semester\Database\Project\HospitalManagementSystem.Core\obj\Debug\net8.0\ref\HospitalManagementSystem.Core.dll

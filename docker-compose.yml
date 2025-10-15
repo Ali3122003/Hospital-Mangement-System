@@ -1,0 +1,48 @@
+version: "3.8"
+services:
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: hospital-db
+    environment:
+      SA_PASSWORD: "YourStrong@Passw0rd"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    volumes:
+      - hospitaldata:/var/opt/mssql
+    healthcheck:
+      test: ["CMD-SHELL", "exit 0"] 
+      interval: 10s
+      retries: 10
+      start_period: 20s
+
+       
+
+  db-init:
+    image: mcr.microsoft.com/mssql-tools
+    container_name: hospital-db-init
+    depends_on:
+      - db
+    volumes:
+      - ./init.sql:/init.sql
+    command: >
+      /bin/bash -c "sleep 30 && /opt/mssql-tools/bin/sqlcmd -S hospital-db -U sa -P YourStrong@Passw0rd -i /init.sql"
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: hospital-web
+    depends_on:
+      - db
+    ports:
+      - "5000:8080"
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=hospital-db;Database=HospitalManagementSystem;User Id=sa;Password=YourStrong@Passw0rd;Encrypt=False;TrustServerCertificate=True;
+      - ASPNETCORE_ENVIRONMENT=Development
+
+volumes:
+  hospitaldata:
+
+
+      

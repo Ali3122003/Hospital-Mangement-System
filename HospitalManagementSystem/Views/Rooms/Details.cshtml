@@ -1,0 +1,16 @@
+﻿@model HospitalManagementSystem.ViewModels.RoomViewModel
+@{
+    ViewData["Title"] = "Room Details";
+}
+
+<h2>Room Details</h2>
+<div>
+    <dl class="row">
+        <dt class="col-sm-2">Room Number</dt>
+        <dd class="col-sm-10">@Model.RoomNumber</dd>
+
+        <dt class="col-sm-2">Occupied</dt>
+        <dd class="col-sm-10">@(Model.Occupied ? "Yes" : "No")</dd>
+    </dl>
+</div>
+<a asp-action="Index" class="btn btn-secondary">Back</a>

@@ -1,0 +1,35 @@
+﻿@model IEnumerable<DepartmentViewModel>
+@{
+    ViewBag.Title = "Departments";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2>Departments</h2>
+        <a asp-action="Create" class="btn btn-primary">+ Add New Department</a>
+    </div>
+
+    <table class="table table-striped">
+        <thead class="table-dark">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th class="text-end">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var dept in Model)
+            {
+                <tr>
+                    <td>@dept.DepartmentId</td>
+                    <td>@dept.DepartmentName</td>
+                    <td class="text-end">
+                        <a class="btn btn-sm btn-info" href="@Url.Action("Details", new { id = dept.DepartmentId })">Details</a>
+                        <a class="btn btn-sm btn-warning" href="@Url.Action("Edit", new { id = dept.DepartmentId })">Edit</a>
+                        <a class="btn btn-sm btn-danger" href="@Url.Action("Delete", new { id = dept.DepartmentId })">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

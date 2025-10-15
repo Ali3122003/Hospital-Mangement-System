@@ -1,0 +1,43 @@
+﻿@model PatientViewModel
+@{
+    ViewData["Title"] = "Edit Patient";
+}
+
+<h2>Edit Patient</h2>
+
+<form asp-action="Edit">
+    <input type="hidden" asp-for="PatientId" />
+
+    <div class="form-group">
+        <label asp-for="PatientName"></label>
+        <input asp-for="PatientName" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="DateOfBirth"></label>
+        <input asp-for="DateOfBirth" class="form-control" type="date" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Gender"></label>
+        <input asp-for="Gender" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Phone"></label>
+        <input asp-for="Phone" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="RoomId">Room</label>
+        <select asp-for="RoomId" class="form-control"
+                asp-items="ViewBag.Rooms">
+            <option value="">-- Select Room --</option>
+        </select>
+    </div>
+
+    <div class="d-flex my-4">
+        <button type="submit" class="btn btn-success w-50">Update</button>
+        <a asp-action="Index" class="btn btn-secondary ms-2 w-50">Cancel</a>
+    </div>
+</form>

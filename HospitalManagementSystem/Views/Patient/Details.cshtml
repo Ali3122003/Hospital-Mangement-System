@@ -1,0 +1,25 @@
+﻿@model PatientViewModel
+@{
+    ViewData["Title"] = "Patient Details";
+}
+
+<h2>Patient Details</h2>
+
+<dl class="row">
+    <dt class="col-sm-2">Name</dt>
+    <dd class="col-sm-10">@Model.PatientName</dd>
+
+    <dt class="col-sm-2">DOB</dt>
+    <dd class="col-sm-10">@Model.DateOfBirth</dd>
+
+    <dt class="col-sm-2">Gender</dt>
+    <dd class="col-sm-10">@Model.Gender</dd>
+
+    <dt class="col-sm-2">Phone</dt>
+    <dd class="col-sm-10">@Model.Phone</dd>
+
+    <dt class="col-sm-2">Room</dt>
+    <dd class="col-sm-10">@Model.RoomNumber</dd>
+</dl>
+
+<a asp-action="Index" class="btn btn-secondary">Back</a>

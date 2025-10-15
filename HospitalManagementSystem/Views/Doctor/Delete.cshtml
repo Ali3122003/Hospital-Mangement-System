@@ -1,0 +1,19 @@
+﻿@model DoctorViewModel
+
+@{
+    ViewData["Title"] = "Delete Doctor";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-3 text-danger">Delete Doctor</h2>
+
+    <div class="alert alert-warning shadow-sm">
+        Are you sure you want to delete <strong>@Model.DoctorName</strong>?
+    </div>
+
+    <form asp-action="Delete" method="post" class="d-inline">
+        <input type="hidden" asp-for="DoctorId" />
+        <button type="submit" class="btn btn-danger">Delete</button>
+        <a asp-action="Index" class="btn btn-secondary ms-2">Cancel</a>
+    </form>
+</div>

@@ -1,0 +1,38 @@
+﻿@model IEnumerable<PatientViewModel>
+@{
+    ViewData["Title"] = "Patients";
+}
+
+<h2>Patients</h2>
+
+<a asp-action="Create" class="btn btn-primary mb-3">+ Create New Patient</a>
+
+<table class="table table-striped table-bordered shadow-sm">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>DOB</th>
+            <th>Gender</th>
+            <th>Phone</th>
+            <th>Room</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var patient in Model)
+        {
+            <tr>
+                <td>@patient.PatientName</td>
+                <td>@patient.DateOfBirth</td>
+                <td>@patient.Gender</td>
+                <td>@patient.Phone</td>
+                <td>@patient.RoomNumber</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@patient.PatientId" class="btn btn-sm btn-warning me-1">Edit</a>
+                    <a asp-action="Details" asp-route-id="@patient.PatientId" class="btn btn-sm btn-info me-1">Details</a>
+                    <a asp-action="Delete" asp-route-id="@patient.PatientId" class="btn btn-sm btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

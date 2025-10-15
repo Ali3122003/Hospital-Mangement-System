@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - HospitalManagementSystem</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/HospitalManagementSystem.styles.css" asp-append-version="true" />
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            transition: all 0.3s ease;
+        }
+
+        .navbar {
+            background: linear-gradient(135deg, #4e73df, #224abe);
+        }
+
+        .navbar-brand, .nav-link {
+            color: #ffffff !important;
+            transition: color 0.3s ease;
+        }
+
+            .nav-link:hover {
+                color: #dcdcdc !important;
+            }
+
+        .container {
+            animation: fadeInUp 0.5s ease-in-out;
+        }
+
+        footer {
+            background-color: #f1f1f1;
+            padding: 15px 0;
+            font-size: 0.9rem;
+            color: #6c757d;
+            text-align: center;
+        }
+
+        @@keyframes fadeInUp {
+            from
+        {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark shadow-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" asp-area="" asp-controller="Home" asp-action="Index">HospitalSystem</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="Index">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" asp-controller="Doctor" asp-action="Index">Doctor</a></li>
+                        <li class="nav-item"><a class="nav-link" asp-controller="Departments" asp-action="Index">Departments</a></li>
+                        <li class="nav-item"><a class="nav-link" asp-controller="Patient" asp-action="Index">Patients</a></li>
+                        <li class="nav-item"><a class="nav-link" asp-controller="Rooms" asp-action="Index">Rooms</a></li>
+                        <li class="nav-item"><a class="nav-link" asp-controller="Treatments" asp-action="Index">Treatments</a></li>
+                        <li class="nav-item"><a class="nav-link" asp-controller="PatientTreatments" asp-action="Index">Patient Treatments</a></li>
+                        <li class="nav-item"><a class="nav-link" asp-controller="Appointments" asp-action="Index">Appointments</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container py-4">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top fixed-bottom">
+        <div class="container">
+            &copy; 2025 - HospitalManagementSystem - <a asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

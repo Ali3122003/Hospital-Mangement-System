@@ -1,0 +1,19 @@
+﻿@model DepartmentViewModel
+@{
+    ViewBag.Title = "Department Details";
+}
+
+<div class="container mt-4">
+    <h2>Department Details</h2>
+
+    <dl class="row mt-3">
+        <dt class="col-sm-3">ID</dt>
+        <dd class="col-sm-9">@Model.DepartmentId</dd>
+
+        <dt class="col-sm-3">Name</dt>
+        <dd class="col-sm-9">@Model.DepartmentName</dd>
+    </dl>
+
+    <a href="@Url.Action("Edit", new { id = Model.DepartmentId })" class="btn btn-warning">Edit</a>
+    <a href="@Url.Action("Index")" class="btn btn-secondary ms-2">Back to List</a>
+</div>

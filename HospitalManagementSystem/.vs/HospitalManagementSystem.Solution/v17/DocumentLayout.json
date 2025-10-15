@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Engineering-Books\\Third year\\Second Semester\\Database\\Project\\HospitalManagementSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{73B8DBD2-52D6-49F3-9C63-37D051E52DE7}|HospitalManagementSystem.csproj|d:\\engineering-books\\third year\\second semester\\database\\project\\hospitalmanagementsystem\\hospitalmanagementsystem.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{73B8DBD2-52D6-49F3-9C63-37D051E52DE7}|HospitalManagementSystem.csproj|solutionrelative:hospitalmanagementsystem.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73B8DBD2-52D6-49F3-9C63-37D051E52DE7}|HospitalManagementSystem.csproj|d:\\engineering-books\\third year\\second semester\\database\\project\\hospitalmanagementsystem\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73B8DBD2-52D6-49F3-9C63-37D051E52DE7}|HospitalManagementSystem.csproj|solutionrelative:controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73B8DBD2-52D6-49F3-9C63-37D051E52DE7}|HospitalManagementSystem.csproj|d:\\engineering-books\\third year\\second semester\\database\\project\\hospitalmanagementsystem\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{73B8DBD2-52D6-49F3-9C63-37D051E52DE7}|HospitalManagementSystem.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73B8DBD2-52D6-49F3-9C63-37D051E52DE7}|HospitalManagementSystem.csproj|d:\\engineering-books\\third year\\second semester\\database\\project\\hospitalmanagementsystem\\views\\doctor\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{73B8DBD2-52D6-49F3-9C63-37D051E52DE7}|HospitalManagementSystem.csproj|solutionrelative:views\\doctor\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73B8DBD2-52D6-49F3-9C63-37D051E52DE7}|HospitalManagementSystem.csproj|d:\\engineering-books\\third year\\second semester\\database\\project\\hospitalmanagementsystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{73B8DBD2-52D6-49F3-9C63-37D051E52DE7}|HospitalManagementSystem.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HospitalManagementSystem",
+              "DocumentMoniker": "D:\\Engineering-Books\\Third year\\Second Semester\\Database\\Project\\HospitalManagementSystem\\HospitalManagementSystem.csproj",
+              "RelativeDocumentMoniker": "HospitalManagementSystem.csproj",
+              "ToolTip": "D:\\Engineering-Books\\Third year\\Second Semester\\Database\\Project\\HospitalManagementSystem\\HospitalManagementSystem.csproj",
+              "RelativeToolTip": "HospitalManagementSystem.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-06T20:00:56.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Engineering-Books\\Third year\\Second Semester\\Database\\Project\\HospitalManagementSystem\\Views\\Doctor\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Doctor\\Index.cshtml",
+              "ToolTip": "D:\\Engineering-Books\\Third year\\Second Semester\\Database\\Project\\HospitalManagementSystem\\Views\\Doctor\\Index.cshtml",
+              "RelativeToolTip": "Views\\Doctor\\Index.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABEAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-09T15:48:58.522Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Engineering-Books\\Third year\\Second Semester\\Database\\Project\\HospitalManagementSystem\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Engineering-Books\\Third year\\Second Semester\\Database\\Project\\HospitalManagementSystem\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAowFgAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-09T15:39:42.298Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DoctorController.cs",
+              "DocumentMoniker": "D:\\Engineering-Books\\Third year\\Second Semester\\Database\\Project\\HospitalManagementSystem\\Controllers\\DoctorController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DoctorController.cs",
+              "ToolTip": "D:\\Engineering-Books\\Third year\\Second Semester\\Database\\Project\\HospitalManagementSystem\\Controllers\\DoctorController.cs",
+              "RelativeToolTip": "Controllers\\DoctorController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T15:38:15.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Engineering-Books\\Third year\\Second Semester\\Database\\Project\\HospitalManagementSystem\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Engineering-Books\\Third year\\Second Semester\\Database\\Project\\HospitalManagementSystem\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-09T15:36:54.868Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

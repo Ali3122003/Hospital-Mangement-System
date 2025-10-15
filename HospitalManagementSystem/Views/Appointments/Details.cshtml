@@ -1,0 +1,26 @@
+﻿@model AppointmentViewModel
+
+@{
+    ViewData["Title"] = "Appointment Details";
+}
+
+<h2>Appointment Details</h2>
+
+<div class="card p-3">
+    <dl class="row">
+        <dt class="col-sm-3">Doctor</dt>
+        <dd class="col-sm-9">@Model.DoctorName</dd>
+
+        <dt class="col-sm-3">Patient</dt>
+        <dd class="col-sm-9">@Model.PatientName</dd>
+
+        <dt class="col-sm-3">Appointment Time</dt>
+        <dd class="col-sm-9">@Model.AppointmentTime.ToString("f")</dd>
+    </dl>
+</div>
+
+<div class="mt-3">
+    <a asp-action="Edit" asp-route-id="@Model.AppointmentId" class="btn btn-warning">Edit</a>
+    <a asp-action="Delete" asp-route-id="@Model.AppointmentId" class="btn btn-danger">Delete</a>
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</div>

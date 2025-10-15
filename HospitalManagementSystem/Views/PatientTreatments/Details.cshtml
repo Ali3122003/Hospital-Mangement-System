@@ -1,0 +1,23 @@
+﻿@model PatientTreatmentViewModel
+
+@{
+    ViewData["Title"] = "Treatment Details";
+}
+
+<h2>Treatment Details</h2>
+<div>
+    <dl class="row">
+        <dt class="col-sm-2">Patient</dt>
+        <dd class="col-sm-10">@Model.PatientName</dd>
+
+        <dt class="col-sm-2">Treatment</dt>
+        <dd class="col-sm-10">@Model.TreatmentName</dd>
+
+        <dt class="col-sm-2">Obtain Date</dt>
+        <dd class="col-sm-10">@Model.ObtainDate</dd>
+
+        <dt class="col-sm-2">End Date</dt>
+        <dd class="col-sm-10">@Model.EndDate?.ToString() ?? "-"</dd>
+    </dl>
+</div>
+<a asp-action="Index" class="btn btn-secondary">Back</a>

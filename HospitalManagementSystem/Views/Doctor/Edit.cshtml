@@ -1,0 +1,39 @@
+﻿@model DoctorViewModel
+
+@{
+    ViewData["Title"] = "Edit Doctor";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4 text-warning">Edit Doctor</h2>
+
+    <form asp-action="Edit" class="card p-4 shadow rounded-3">
+        <input type="hidden" asp-for="DoctorId" />
+
+        <div class="mb-3">
+            <label asp-for="DoctorName" class="form-label"></label>
+            <input asp-for="DoctorName" class="form-control" />
+            <span asp-validation-for="DoctorName" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Specialty" class="form-label"></label>
+            <input asp-for="Specialty" class="form-control" />
+            <span asp-validation-for="Specialty" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="DepartmentId" class="form-label">Department</label>
+            <select asp-for="DepartmentId" class="form-select"
+                    asp-items="@(new SelectList(ViewBag.Departments, "DepartmentId", "DepartmentName", Model.DepartmentId))">
+                <option value="">-- Select Department --</option>
+            </select>
+            <span asp-validation-for="DepartmentId" class="text-danger"></span>
+        </div>
+
+        <div class="d-flex">
+            <button type="submit" class="btn btn-success w-50">Update</button>
+            <a asp-action="Index" class="btn btn-secondary ms-2 w-50">Cancel</a>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,23 @@
+﻿@model DoctorViewModel
+
+@{
+    ViewData["Title"] = "Doctor Details";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4 text-info">Doctor Details</h2>
+
+    <div class="card p-4 shadow rounded-3">
+        <dl class="row">
+            <dt class="col-sm-3">Name</dt>
+            <dd class="col-sm-9">@Model.DoctorName</dd>
+
+            <dt class="col-sm-3">Specialty</dt>
+            <dd class="col-sm-9">@Model.Specialty</dd>
+
+            <dt class="col-sm-3">Department</dt>
+            <dd class="col-sm-9">@Model.DepartmentName</dd>
+        </dl>
+        <a asp-action="Index" class="btn btn-secondary mt-3">Back to List</a>
+    </div>
+</div>

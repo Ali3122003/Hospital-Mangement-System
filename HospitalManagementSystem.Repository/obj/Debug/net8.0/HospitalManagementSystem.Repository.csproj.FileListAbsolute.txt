@@ -1,0 +1,15 @@
+D:\Engineering-Books\Third year\Second Semester\Database\Project\HospitalManagementSystem.Repository\bin\Debug\net8.0\HospitalManagementSystem.Repository.deps.json
+D:\Engineering-Books\Third year\Second Semester\Database\Project\HospitalManagementSystem.Repository\bin\Debug\net8.0\HospitalManagementSystem.Repository.dll
+D:\Engineering-Books\Third year\Second Semester\Database\Project\HospitalManagementSystem.Repository\bin\Debug\net8.0\HospitalManagementSystem.Repository.pdb
+D:\Engineering-Books\Third year\Second Semester\Database\Project\HospitalManagementSystem.Repository\bin\Debug\net8.0\HospitalManagementSystem.Core.dll
+D:\Engineering-Books\Third year\Second Semester\Database\Project\HospitalManagementSystem.Repository\bin\Debug\net8.0\HospitalManagementSystem.Core.pdb
+D:\Engineering-Books\Third year\Second Semester\Database\Project\HospitalManagementSystem.Repository\obj\Debug\net8.0\HospitalManagementSystem.Repository.csproj.AssemblyReference.cache
+D:\Engineering-Books\Third year\Second Semester\Database\Project\HospitalManagementSystem.Repository\obj\Debug\net8.0\HospitalManagementSystem.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\Engineering-Books\Third year\Second Semester\Database\Project\HospitalManagementSystem.Repository\obj\Debug\net8.0\HospitalManagementSystem.Repository.AssemblyInfoInputs.cache
+D:\Engineering-Books\Third year\Second Semester\Database\Project\HospitalManagementSystem.Repository\obj\Debug\net8.0\HospitalManagementSystem.Repository.AssemblyInfo.cs
+D:\Engineering-Books\Third year\Second Semester\Database\Project\HospitalManagementSystem.Repository\obj\Debug\net8.0\HospitalManagementSystem.Repository.csproj.CoreCompileInputs.cache
+D:\Engineering-Books\Third year\Second Semester\Database\Project\HospitalManagementSystem.Repository\obj\Debug\net8.0\Hospital.A1F8D741.Up2Date
+D:\Engineering-Books\Third year\Second Semester\Database\Project\HospitalManagementSystem.Repository\obj\Debug\net8.0\HospitalManagementSystem.Repository.dll
+D:\Engineering-Books\Third year\Second Semester\Database\Project\HospitalManagementSystem.Repository\obj\Debug\net8.0\refint\HospitalManagementSystem.Repository.dll
+D:\Engineering-Books\Third year\Second Semester\Database\Project\HospitalManagementSystem.Repository\obj\Debug\net8.0\HospitalManagementSystem.Repository.pdb
+D:\Engineering-Books\Third year\Second Semester\Database\Project\HospitalManagementSystem.Repository\obj\Debug\net8.0\ref\HospitalManagementSystem.Repository.dll
