@@ -2,3 +2,5 @@ init.sql
 script.sql
 .env
 HospitalManagementSystem/appsettings.json
+.vs
+bin
