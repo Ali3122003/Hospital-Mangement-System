@@ -4,3 +4,7 @@ script.sql
 HospitalManagementSystem/appsettings.json
 .vs
 bin
+HospitalManagementSystem/bin/
+HospitalManagementSystem.Repository/bin/
+HospitalManagementSystem.Services/bin/
+HospitalManagementSystem.Core/bin/
